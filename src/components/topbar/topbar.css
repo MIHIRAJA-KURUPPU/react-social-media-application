@@ -33,7 +33,7 @@
 }
 
 .searchbar {
-    width: 75%; /* This defines the width of the search bar relative to its container */
+    width: 100%; /* This defines the width of the search bar relative to its container */
     max-width: 500px; /* This sets the maximum width of the search bar */
     height: 30px;
     display: flex;
