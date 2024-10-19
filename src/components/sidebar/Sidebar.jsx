@@ -1,4 +1,9 @@
 import "./sidebar.css";
+import {Users} from "../../dummyData";
+import CloseFriend from "../closeFriend/CloseFriend";
+
+
+
 import RssFeedIcon from '@mui/icons-material/RssFeed';
 import HelpOutline from '@mui/icons-material/HelpOutline';
 import WorkOutline from '@mui/icons-material/WorkOutline';
@@ -56,30 +61,9 @@ export default function Sidebar() {
             <button className="sidebarButton">Show More</button>
             <hr className="sidebarHr"/>
             <ul className="sidebarFriendList">
-                <li className="sidebarFriend">
-                    <img src="/assets/person/1.jpg" alt="" className="sidebarFriendImg"/>
-                    <span className="sidebarFriendName">John Doe</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/2.jpg" alt="" className="sidebarFriendImg"/>
-                    <span className="sidebarFriendName">John Doe</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/3.jpg" alt="" className="sidebarFriendImg"/>
-                    <span className="sidebarFriendName">John Doe</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/4.jpg" alt="" className="sidebarFriendImg"/>
-                    <span className="sidebarFriendName">John Doe</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/5.jpg" alt="" className="sidebarFriendImg"/>
-                    <span className="sidebarFriendName">John Doe</span>
-                </li>
-                <li className="sidebarFriend">
-                    <img src="/assets/person/6.jpg" alt="" className="sidebarFriendImg"/>
-                    <span className="sidebarFriendName">John Doe</span>
-                </li>
+                {Users.map(u=>(
+                    <CloseFriend key={u.id} user={u}/>
+                ))}
             </ul>
         </div>
     </div>
