@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import Home from './pages/home/Home'; // Importing Home component if needed later
+//import PersonIcon from '@mui/icons-material/Person'; // Importing the Person icon
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  //return <PersonIcon style={{ fontSize: 40, color: 'blue' }} />; // Rendering the Person icon
+  return <Home />; // Rendering the Home component
 }
 
 export default App;

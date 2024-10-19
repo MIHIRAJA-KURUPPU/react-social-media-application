@@ -1,0 +1,109 @@
+.topbarContainer{
+    height : 50px;
+    width :100%;
+    background-color:#010439;
+    display:flex;
+    align-items :center;
+    position:sticky;
+    top:0;
+}
+
+.topbarLeft{
+    flex:3;
+    background-color: #010439;
+
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+
+.topbarCenter {
+    flex: 5;
+    display: flex;
+    justify-content: center; /* Center the searchbar horizontally */
+    align-items: center; /* Center the searchbar vertically */
+    background-color: #010439;
+}
+
+.searchbar {
+    width: 75%; /* This defines the width of the search bar relative to its container */
+    max-width: 500px; /* This sets the maximum width of the search bar */
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0 10px; /* Ensures padding inside the search bar */
+}
+
+.searchIcon {
+    font-size: 20px !important;
+    margin-right: 10px; /* Space between the icon and input field */
+}
+
+.searchInput {
+    border: none;
+    width: 100%; /* Allows input field to take up the remaining space */
+    padding: 0 5px; /* Adds a little padding inside the input field */
+}
+
+.searchInput:focus {
+    outline: none; /* Removes the focus outline */
+}
+
+
+.topbarRight{
+    flex:4;
+    background-color: #010439;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+
+}
+
+.topbarLinks{
+    margin-right: 10px;
+    cursor: pointer;
+    font: size 14px;
+}
+.topbarIconItem{
+    margin-right:15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.topbarIcons{
+    display: flex;
+}
+
+.topbarIconBadge{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers the badge content */
+    color: white;
+    font-size: 12px;
+}
+
+
+.topbarImg{
+    width : 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
