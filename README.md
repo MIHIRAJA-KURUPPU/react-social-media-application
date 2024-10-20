@@ -1,4 +1,4 @@
-#EchoME
+# EchoME
 
 <h1>Social Media Application (React)</h1>
 
